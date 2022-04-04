@@ -1,0 +1,26 @@
+.footerBlock {
+    height: 18vh;
+    background-color: #73b57d;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    border: 1px solid;
+}
+
+.fullBodyElement {
+    background-color: #a2b5b1;
+    height: 50px;
+    width: 50px;
+}
+
+.emptyBodyElement {
+    height: 50px;
+    width: 50px;
+}
