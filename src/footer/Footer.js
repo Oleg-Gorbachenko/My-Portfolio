@@ -10,11 +10,8 @@ export const Footer = () => {
                 <h2 className={styleTitle.title}>Oleg Gorbachenko</h2>
                 <div className={styles.wrapper}>
                     <div className={styles.fullBodyElement}></div>
-                    <div className={styles.emptyBodyElement}></div>
                     <div className={styles.fullBodyElement}></div>
-                    <div className={styles.emptyBodyElement}></div>
                     <div className={styles.fullBodyElement}></div>
-                    <div className={styles.emptyBodyElement}></div>
                     <div className={styles.fullBodyElement}></div>
                 </div>
                 <p>2022 Все права защищены</p>
