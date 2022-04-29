@@ -1,5 +1,7 @@
+@import "../common/styles/sass/variables";
+
 .footerBlock {
-    background-color: #73b57d;
+    background: $bgColor;
 }
 
 .footerContainer {
@@ -17,7 +19,7 @@
 }
 
 .fullBodyElement {
-    background-color: #a2b5b1;
+    background: $bgSecondColor;
     height: 50px;
     width: 50px;
 }

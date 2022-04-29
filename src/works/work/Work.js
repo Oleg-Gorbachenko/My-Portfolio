@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './work.module.scss'
+import styles from './Work.module.scss'
 import styleBtn from '../../common/styles/Btn.module.scss'
 
 export const Work = (props) => {

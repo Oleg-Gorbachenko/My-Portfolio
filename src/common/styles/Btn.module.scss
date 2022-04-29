@@ -1,10 +1,18 @@
 @import "./sass/variables";
+
 .btn {
-    background-color: $primaryColor;
-    color: $textColor;
-    font-size: 22px;
-    padding: 12px 30px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: $bgColor;
+  color: $textColor;
+  font-size: 22px;
+  padding: 12px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  border: 1px solid $primaryColor;
+}
+
+.btn:hover {
+  background-color:$primaryColor;
 }

@@ -1,0 +1,31 @@
+@import "../common/styles/sass/variables";
+
+.mainBlock {
+  display: flex;
+  height: 100vh;
+  background: $bgColor;
+}
+
+.text {
+  width: 300px;
+  background-color: $bgColor;
+  color: $textColor;
+}
+
+.photo {
+  width: 300px;
+  height: 400px;
+  background-color: #b5a5ad;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+span {
+  font-size: 24px;
+}
+
+p {
+  font-size: 24px;
+}

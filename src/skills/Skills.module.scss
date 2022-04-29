@@ -1,6 +1,8 @@
+@import "../common/styles/sass/variables";
+
 .skillsBlock {
     min-height: 100vh;
-    background-color: #b0b554;
+    background: $bgSecondColor;
     display: flex;
     justify-content: center;
     align-items: center;
