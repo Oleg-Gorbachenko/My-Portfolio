@@ -1,4 +1,5 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 .contactsBlock {
   min-height: 100vh;
@@ -29,6 +30,7 @@
       padding: 6px 15px;
       font-weight: 400;
       line-height: 1.5;
+      @include text($textFontFamily, 14px, 1.8);
 
       &:focus {
         outline: none;
