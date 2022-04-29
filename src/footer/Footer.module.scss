@@ -1,25 +1,38 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 .footerBlock {
-    background: $bgColor;
-}
+  background: $bgColor;
 
-.footerContainer {
+  .footerContainer {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-}
+  }
 
-.wrapper {
+  .wrapper {
     display: flex;
     border: 1px solid;
     justify-content: space-between;
     max-width: 350px;
     width: 100%;
+
+    .fullBodyElement {
+      background: $bgSecondColor;
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  p {
+    @include text($textFontFamily, 18px, 1.8);
+  }
+
 }
 
-.fullBodyElement {
-    background: $bgSecondColor;
-    height: 50px;
-    width: 50px;
-}
+
+
+
+
+
+
