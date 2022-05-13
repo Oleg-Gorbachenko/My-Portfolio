@@ -14,7 +14,7 @@ export const Footer = () => {
                     <div className={styles.fullBodyElement}></div>
                     <div className={styles.fullBodyElement}></div>
                 </div>
-                <p>© 2022 Все права защищены</p>
+                <p>© 2022 All rights reserved</p>
             </div>
         </div>
     );

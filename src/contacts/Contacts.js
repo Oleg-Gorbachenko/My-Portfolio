@@ -15,7 +15,7 @@ export const Contacts = () => {
                     <textarea className={styles.formControl} name="" id="" cols="60" rows="10"
                               placeholder='Your message'></textarea>
                 </form>
-                <button type='submit' className={`${styleBtn.btn} ${styles.btn}`}>Push</button>
+                <button type='submit' className={`${styleBtn.btn} ${styles.btn}`}>Send</button>
             </div>
         </div>
     );

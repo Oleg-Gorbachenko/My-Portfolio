@@ -6,11 +6,11 @@
   font-size: 22px;
   padding: 12px 30px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 20px;
   text-decoration: none;
   position: relative;
   z-index: 1;
-  border: 1px solid $primaryColor;
+  border: 2px solid $primaryColor;
 }
 
 .btn:hover {

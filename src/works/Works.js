@@ -25,12 +25,12 @@ export const Works = () => {
                 <div className={styles.works}>
                     <Work style={social}
                           title={'Social Network'}
-                          description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque ex hic laboriosam neque provident quaeLorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque ex hic laboriosam neque provident quae'}/>
+                          description={'Used technologies: React/Redux/Redux Toolkit/React-router-dom v6/Axios/Formik. Social Network app created with react hooks and class components, routing and redirects, REST api request/response flow, unit-tests and etc.'}/>
                     <Work style={todolist}
                           title={'Todolist'}
-                          description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque ex hic laboriosam neque provident quae'}/>
+                          description={'Used technologies: React/Redux/Redux Toolkit/React-router-dom v6/ Jest(Unit-Tests) /Storybook/Axios /Formik/Material UI. Todolist app created with react hooks, routing and redirects, material UI, REST api request/response flow, unit-tests and etc.'}/>
                     <Work style={counter}
-                          title={'Counter'}
+                          title={'Friday project'}
                           description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque ex hic laboriosam neque provident quae'}/>
                 </div>
             </div>

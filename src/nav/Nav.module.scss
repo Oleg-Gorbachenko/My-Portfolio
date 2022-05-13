@@ -5,14 +5,13 @@
     display: flex;
     justify-content: space-between;
     min-width: 340px;
-    border: 1px solid black;
+    //border: 1px solid black;
     margin-right: 20px;
 }
 
 .href {
     text-decoration: none;
     color: $textColor;
-    font-size: 16px;
     font-weight: bold;
     @include text($titleFontFamily, 16px, 1.8);
     letter-spacing: 1px;
