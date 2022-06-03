@@ -12,6 +12,6 @@
     text-decoration: none;
     color: $textColor;
     font-weight: bold;
-    @include text($titleFontFamily, 16px, 1.8);
+    @include text($titleFontFamily, 16px, 1.8, 300);
     letter-spacing: 1px;
 }

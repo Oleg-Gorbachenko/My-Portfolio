@@ -3,32 +3,63 @@
 
 .footerBlock {
   background: $bgColor;
+  max-height: 300px;
+  @include flex(row, center, stretch, nowrap);
 
-  .footerContainer {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding-top: 20px;
-  }
+  .container {
+    @include container();
+    @include flex(column, flex-start, center, nowrap);
 
-  .wrapper {
-    display: flex;
-    //border: 1px solid;
-    justify-content: space-between;
-    max-width: 350px;
-    width: 100%;
+    .socialIcons {
+      @include flex(row, space-between, center, nowrap);
+      width: 400px;
+      margin-top: 30px;
+      @media screen and (max-width: 505px) {
+        width: 100%;
+      }
 
-    .fullBodyElement {
-      background: $bgSecondColor;
-      height: 50px;
-      width: 50px;
+      .socialIcon {
+        background: $bgSecondColor;
+        height: 60px;
+        width: 60px;
+        border: 1px solid #4a4a4a;
+        border-radius: 50%;
+
+        &:hover {
+          border: 1px solid $textColor;
+          transition: all 0.3s ease-in-out 0s;
+        }
+
+        @media screen and (max-width: 380px) {
+          width: 50px;
+          height: 50px;
+        }
+
+        a {
+          width: 100%;
+          height: 100%;
+          @include flex(row, center, center, nowrap);
+
+          .imgFromFontAwesome {
+            color: $primaryColor;
+            height: 40px;
+          }
+
+          img {
+            height: 40px;
+            background-color: $bgSecondColor;
+            //color: $primaryColor;
+          }
+        }
+      }
+    }
+
+    .copyright {
+      margin-top: 40px;
+      @include text($textFontFamily, 14px, 1.8, 300);
+      opacity: 0.6;
     }
   }
-
-  p {
-    @include text($textFontFamily, 18px, 1.8);
-  }
-
 }
 
 

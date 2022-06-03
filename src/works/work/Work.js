@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './Work.module.scss'
-import styleBtn from '../../common/styles/Btn.module.scss'
+import {Button} from "../../common/components/button/Button";
 
 export const Work = (props) => {
     return (
         <div className={styles.work}>
             <div className={styles.img}
                  style={props.style}>
-                <a href="#" className={`${styleBtn.btn} ${styles.btn}`}>View</a>
+                <Button href={'#'} name={'View'}/>
             </div>
             <div className={styles.descriptionWrapper}>
                 <h3 className={styles.workTitle}>{props.title}</h3>

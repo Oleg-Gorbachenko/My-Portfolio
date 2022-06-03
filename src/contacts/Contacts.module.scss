@@ -1,54 +1,79 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
+@import "../common/components/button/Button.module";
 
 .contactsBlock {
-  min-height: 100vh;
   background: $bgSecondColor;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 50px 0;
 
-  .contactsContainer {
-    display: flex;
-    flex-direction: column;
-  }
+  .container {
+    @include container();
+    @include flex(column, flex-start, center, nowrap);
 
-  .forms {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 80%;
+    .forms {
+      @include flex(column, flex-start, stretch, nowrap);
+      width: 540px;
+      margin-top: 60px;
 
-    @media screen and (max-width: 414px) {
-      max-width: 100%;
-    }
+      @media screen and (max-width: 680px) {
+        width: 100%;
+      }
 
-    .formControl {
-      background-color: $bgColor;
-      resize: none;
-      border: 1px solid #4a4a4a;
-      border-top-style: none;
-      border-left-style: none;
-      font-size: 14px;
-      padding: 6px 15px;
-      font-weight: 400;
-      line-height: 1.5;
-      @include text($textFontFamily, 14px, 1.8);
-
-      &:focus {
+      .formArea,
+      .messageArea {
+        background-color: $bgColor;
+        border: 1px solid #4a4a4a;
+        box-sizing: border-box;
+        //border-top-style: none;
+        //border-left-style: none;
+        @include text(inherit, 12px, 1.5, 400);
         outline: none;
-        border: none;
+        color: #495057;
+        margin-bottom: 1.2rem;
+
+        &:-webkit-autofill {
+          border: 1px solid #4a4a4a;
+          -webkit-text-fill-color: #495057;
+          -webkit-box-shadow: 0 0 0 1000px #252527 inset;
+          transition: background-color 5000s ease-in-out 0s;
+        }
+
+        &:focus {
+          outline: none;
+          border: none;
+        }
       }
     }
-  }
 
-  .btn {
-    margin-top: 30px;
+    .formArea {
+      height: calc(1.5em + .75rem + 2px);
+      padding: .4rem 15px;
+
+      &:focus {
+        border: 1px solid transparent;
+        transition: all 0.4s ease-in-out 0s;
+      }
+    }
+
+    .messageArea {
+      min-height: 160px;
+      padding: 15px;
+      resize: none;
+
+      &:focus {
+        border: 1px solid transparent;
+        transition: all 0.4s ease-in-out 0s;
+      }
+    }
+
+    button[type='submit'] {
+      @extend .btn;
+      align-self: center;
+      background-color: transparent;
+      margin-top: 30px;
+    }
   }
 }
-
-
-
 
 
 

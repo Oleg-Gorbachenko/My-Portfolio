@@ -4,7 +4,7 @@
 
 .skill {
   width: 250px;
-  background-color: $bgColor;
+  background-color: $bgSecondColor;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,17 +14,25 @@
   margin: 10px 20px 20px 0;
 
   .title {
-    @include text($titleFontFamily, 18px, 1.2);
-
+    @include text($titleFontFamily, 18px, 1.2, 300);
+    margin-top: 30px;
   }
 
   .icon {
+    transform: rotate(45deg);
+    background-color: rgba(255,255,255,0.1);
     height: 80px;
     width: 80px;
     color: $primaryColor;
+
+    .img {
+      transform: rotate(-45deg);
+      width: 55%;
+      height: 80px;
+    }
   }
 
   .description {
-    @include text($textFontFamily, 14px, 1.8);
+    @include text($textFontFamily, 14px, 1.8, 300);
   }
 }

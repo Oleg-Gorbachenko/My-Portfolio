@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Skills.module.scss'
-import styleContainer from '../common/styles/Container.module.scss'
 import {Skill} from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
 import {faCss3, faGitAlt, faJs, faReact} from "@fortawesome/free-brands-svg-icons";
@@ -10,12 +9,12 @@ import {faCircleCheck, faPenSquare, faShareFromSquare, faWarehouse} from "@forta
 export const Skills = () => {
     return (
         <div className={styles.skillsBlock}>
-            <div className={`${styleContainer.container} ${styles.skillsContainer}`}>
+            <div className={styles.skillsContainer}>
                 <Title title={'Skills'}/>
                 <div className={styles.skills}>
                     <Skill icon={faJs}
                            title={'JS/TS'}
-                           description={'JS allows us to build both front and back'}/>
+                           description={'JS allows us to build both front-end and back-end'}/>
                     <Skill icon={faReact}
                            title={'REACT'}
                            description={`I'm using React in SPA to render pages efficiently`}/>
