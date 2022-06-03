@@ -2,7 +2,6 @@
 @import "../../common/styles/sass/mixins";
 
 .work {
-  background-color: $bgColor;
   width: 450px;
   display: flex;
   flex-direction: column;
@@ -42,7 +41,7 @@
 
   .descriptionWrapper {
     padding: 25px 20px;
-    background-color: $bgSecondColor;
+    background-color: $bgColor;
 
     .workTitle {
       @include text($titleFontFamily, 18px, 1.2, 300);

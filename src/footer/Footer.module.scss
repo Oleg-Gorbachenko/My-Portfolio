@@ -2,7 +2,6 @@
 @import "../common/styles/sass/mixins";
 
 .footerBlock {
-  background: $bgColor;
   max-height: 300px;
   @include flex(row, center, stretch, nowrap);
 
@@ -55,7 +54,7 @@
     }
 
     .copyright {
-      margin-top: 40px;
+      margin-top: 20px;
       @include text($textFontFamily, 14px, 1.8, 300);
       opacity: 0.6;
     }

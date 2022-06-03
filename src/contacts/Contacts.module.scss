@@ -3,7 +3,7 @@
 @import "../common/components/button/Button.module";
 
 .contactsBlock {
-  background: $bgSecondColor;
+  min-height: 75vh;
   padding: 50px 0;
 
   .container {
@@ -21,7 +21,7 @@
 
       .formArea,
       .messageArea {
-        background-color: $bgColor;
+        background-color: $bgSecondColor;
         border: 1px solid #4a4a4a;
         box-sizing: border-box;
         //border-top-style: none;

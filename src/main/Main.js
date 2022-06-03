@@ -1,19 +1,33 @@
 import React from 'react';
-import styles from './Main.module.scss'
+import styles from './Main.module.scss';
+import Bounce from 'react-reveal/Bounce';
+import ReactTypingEffect from 'react-typing-effect';
+import Tilt from 'react-tilt';
 
 export const Main = () => {
     return (
-        <div className={styles.mainBlock}>
+        <div id='main' className={styles.mainBlock}>
             <div className={styles.container}>
-                <div className={styles.greeting}>
-                    <span>Hi There</span>
-                    <span>I am <span>Oleg Gorbachenko</span></span>
-                    <h1>A Frontend Developer</h1>
-                </div>
-                <div className={styles.photo}>
-                    <div className={styles.image}>
+                <Bounce top>
+                    <div className={styles.greeting}>
+                        <span>Hi There</span>
+                        <span>I am <span>Oleg Gorbachenko</span></span>
+                        <ReactTypingEffect
+                            text={"A Frontend Developer"}
+                            eraseDelay={2500}
+                            typingDelay={2000}
+                            speed={150}
+                        />
                     </div>
-                </div>
+                </Bounce>
+                <Bounce bottom>
+                    <div className={styles.photo}>
+                        <Tilt className="Tilt" options={{max: 25}}>
+                            <div className={styles.image}>
+                            </div>
+                        </Tilt>
+                    </div>
+                </Bounce>
             </div>
         </div>
     );
