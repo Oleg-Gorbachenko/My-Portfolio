@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styles from './BurgerNav.module.scss';
 import {Link} from "react-scroll";
-import burgerMenu from '../../assets/image/burgerMenu.png'
+import burgerMenu from '../../assets/image/burgerMenuBlue.png'
 
 export const BurgerNav = () => {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
