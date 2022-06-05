@@ -7,7 +7,7 @@ export const Work = (props) => {
         <div className={styles.work}>
             <div className={styles.img}
                  style={props.style}>
-                <Button href={'#'} name={'View'}/>
+                <Button href={props.href} name={'View'}/>
             </div>
             <div className={styles.descriptionWrapper}>
                 <h3 className={styles.workTitle}>{props.title}</h3>
