@@ -24,11 +24,9 @@
         background-color: $bgSecondColor;
         border: 1px solid #4a4a4a;
         box-sizing: border-box;
-        //border-top-style: none;
-        //border-left-style: none;
         @include text(inherit, 12px, 1.5, 400);
         outline: none;
-        color: #495057;
+        color: $textColor;
         margin-bottom: 1.2rem;
 
         &:-webkit-autofill {
@@ -71,6 +69,12 @@
       align-self: center;
       background-color: transparent;
       margin-top: 30px;
+    }
+
+    .doneMessage {
+      display: flex;
+      justify-content: center;
+      color: $textColor;
     }
   }
 }

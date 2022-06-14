@@ -2,9 +2,9 @@ import './App.scss';
 import {Header} from "./header/Header";
 import {Main} from "./main/Main";
 import {Skills} from "./skills/Skills";
-import {Contacts} from "./contacts/Contacts";
 import {Footer} from "./footer/Footer";
 import {Works} from "./works/Works";
+import {ContactForm} from "./contacts/ContactForm";
 
 function App() {
     return (
@@ -13,7 +13,7 @@ function App() {
             <Main/>
             <Skills/>
             <Works/>
-            <Contacts/>
+            <ContactForm/>
             <Footer/>
         </div>
     );
